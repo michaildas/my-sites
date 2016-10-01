@@ -1,0 +1,71 @@
+.deal-area {
+  height: 835px;
+  background: url(../images/deal-area-bg.jpg) center bottom no-repeat;
+  text-align: center;
+  padding-top: 105px;
+}
+
+.deal-area__heading {
+  color: $text-color-1;
+  margin-bottom: 57px;
+}
+
+.deals__item {
+  position: relative;
+  display: inline-block;
+  background: $text-color-1;
+  width: 31%;
+  &:not(:last-child) {
+    margin-right: 2%;
+  }
+  padding-bottom: 40px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+.deals__item-img {
+  display: block;
+  max-width: 100%;
+}
+
+.deals__item-price{
+  position: absolute;
+  bottom:0;
+  margin-bottom: -20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background: #47a0ff;
+  letter-spacing: 0.2rem;
+}
+
+.deals__item-new-price {
+  display: inline-block;
+  @include BigNoodle($text-color-1, 2.47rem);
+  padding-left: 8px;
+}
+
+.deals__item-old-price {
+  display: inline-block;
+  @include BigNoodle($text-color-1, $fsdouble);
+  text-decoration: line-through;
+}
+.text-wrapper {
+  padding: 47px 20px 40px 30px;
+}
+.deals__item-title {
+  @include BigNoodle($text-color-2, 2.67rem);
+  @extend %h-adjustment;
+}
+
+.deals__item-desc {
+  text-align: left;
+  color: $text-color-2;
+}
+
+.deals__item-link {
+  width: 58%;
+}

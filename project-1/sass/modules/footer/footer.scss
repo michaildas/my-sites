@@ -1,0 +1,92 @@
+.footer {
+  color: $text-color-2;
+}
+.footer__wrapper {
+  display: table;
+}
+.footer__content {
+  display: table-cell;
+  height: $footer-height;
+  vertical-align: middle;
+}
+.footer__info, .footer__support, .footer__socials {
+  float: left;
+  padding-right: 40px;
+}
+
+.footer__sign-up {
+  float: left;
+}
+
+.footer__info {
+  width: 30%;
+}
+
+.footer__support {
+  width: 20%
+}
+
+.footer__socials, .footer__sign-up {
+  width: 25%;
+}
+
+.footer__heading {
+  @include BigNoodle($text-color-2, $fsdouble);
+  @extend %h-adjustment;
+  margin-bottom: 35px;
+}
+
+.footer-info__item, .links-list__item {
+  &:not(:last-child) {
+    padding-bottom: 10px;
+  }
+}
+
+.links-list__link {
+  display: inline-block;
+  color: $text-color-2;
+}
+
+.socials__item {
+  display: inline-block;
+  &:not(:last-child) {
+    padding-right: 8px;
+  }
+  padding-bottom: 10px;
+}
+.socials__link {
+  display: inline-block;
+  background: #47a0ff;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.sign-up {
+  position: relative;
+}
+
+.sign-up__input {
+  max-width: 100%;
+  @include placeholder-color($text-color-2);
+  color: $text-color-2;
+  font-size: 13px;
+  background: #f2f2f2;
+  padding: 17px 90px 17px 20px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  &:focus {
+    border: 1px solid #a6c8ff;
+  }
+}
+
+.sign-up__submit {
+  position: absolute;
+  padding: 12px;
+  right:0;
+  top: 50%;
+  margin-top: -22.5px;
+}

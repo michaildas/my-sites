@@ -1,0 +1,52 @@
+.trips {
+  max-width: 1600px;
+  margin: 0 auto 45px;
+}
+.find-trip-area__heading {
+  text-align: center;
+  color: $text-color-2;
+  padding: 90px;
+}
+
+.trips__item {
+  position: relative;
+  float: left;
+  width: 33.3333333%;
+  padding-right: 1px;
+}
+
+.trips__item-image {
+  display: block;
+  max-width: 100%;
+}
+.trips__item-info {
+  display: table;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  vertical-align: middle;
+}
+
+.trips__item-title {
+  @extend %h-adjustment;
+  text-transform: uppercase;
+  font-size: 1.73rem;
+  font-weight: bold;
+  margin-bottom: 11px;
+}
+
+.trips__item-desc {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.trips__item-link {
+  padding: 10px;
+  width: 50%;
+}

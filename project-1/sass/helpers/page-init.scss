@@ -1,0 +1,100 @@
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+html {
+  @extend %page-init;
+  font: 15px/1.42 "Open Sans", sans-serif;
+}
+
+body {
+  @extend %page-init;
+  @include placeholder-color;
+  background: #ffffff;
+  color: $text-color-1;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.top-wrapper {
+  height: 935px;
+  background: url(../images/banner.jpg) center bottom no-repeat;
+  margin-bottom: 80px;
+}
+
+.empty {
+  height: $footer-height;
+}
+
+.footer {
+  height: $footer-height;
+  margin-top: -$footer-height;
+  position: relative;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $text-color-1
+}
+
+i {
+  color: $text-color-1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.heading {
+  font: $fsbig "BigNoodleTitling", sans-serif;
+  line-height: 1.42;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  @extend %h-adjustment;
+}
+
+.button{
+  background-color: $button-color;
+  border-radius: 5px;
+  border: 0;
+  color: $text-color-1;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  padding: 18px;
+  display: inline-block;
+}
+
+.round-button {
+  background-color: #47a0ff;
+  font-weight: bold;
+  color: $text-color-1;
+  font-size: 1rem;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+

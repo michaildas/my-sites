@@ -1,0 +1,30 @@
+.bottom-banner {
+  height: 697px;
+  background: url(../images/bottom-banner.jpg) center bottom no-repeat;
+}
+.bottom-banner__wrapper {
+  display: table;
+}
+.bottom-banner__content {
+  display: table-cell;
+  height: 697px;
+  width:100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.bottom-banner__heading{
+  font-size: 10rem;
+  line-height: 1;
+}
+
+.bottom-banner__sub-heading {
+  line-height: 1;
+  margin-bottom: 27px;
+}
+
+.bottom-banner__button {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  line-height: 160px;
+}

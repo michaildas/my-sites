@@ -1,0 +1,54 @@
+.tour-type {
+  background: url(../images/tour-type-bg.jpg) center bottom no-repeat;
+  height: 610px;
+  text-align: center;
+  position: relative;
+}
+
+.tour-type__heading {
+  margin-bottom: 25px;
+  color: $text-color-2;
+}
+.tour-type__text {
+  color: $text-color-2;
+  font-size: $fsmedium;
+  padding: 0 85px;
+}
+
+.tour-type__pics {
+  position: absolute;
+  top: 208px;
+  height: 265px;
+  left: 0;
+  right: 0;
+}
+
+.pics-item {
+  display: inline-block;
+  width: 24%;
+}
+
+.pics-item__link {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  background: black;
+}
+.pics-item__img {
+  display: block;
+  max-width: 100%;
+}
+
+.pics-item__title {
+  @extend %h-adjustment;
+  @include BigNoodle($text-color-1, $fsdouble);
+  position: absolute;
+  height: 16%;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin: auto;
+}

@@ -1,0 +1,91 @@
+
+.banner-area__text {
+  float: left;
+  position: relative;
+  padding-top: 175px;
+  height: 715px;
+  width: 56%;
+  padding-right: 40px;
+}
+
+.banner-area-slogan {
+  text-align: center;
+  &__heading {
+    text-transform: uppercase;
+    @include BigNoodle($text-color-1, 4.158rem);
+    @extend %h-adjustment;
+    letter-spacing: 0.2rem ;
+  }
+
+  &__text {
+    font-size: $fsdouble;
+    @extend %h-adjustment
+  }
+}
+
+.banner-area__additional-text {
+  font-size: $fsmedium;
+  position: absolute;
+  bottom: 9%;
+  padding-left: 20px;
+}
+
+/* ---------- search box ---------- */
+
+.banner-area__search-box {
+  float:right;
+  width: 44%;
+}
+
+.search-box {
+  background: $text-color-1;
+  color: $text-color-2;
+  text-align: center;
+  padding: 15px 45px 60px;
+}
+
+.search-box__title {
+  @include BigNoodle($text-color-2, 4.67rem);
+  @extend %h-adjustment;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+
+}
+
+.search-box__call {
+  font-size: $fsmedium;
+  @extend %h-adjustment;
+  padding-bottom: 27px;
+}
+
+.search-box-input {
+  position: relative;
+}
+.search-box-input__item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18px 45px 18px 20px;
+  background-color: $input-bgcolor;
+  border:0;
+  color: $text-color-2;
+  border-radius: 5px;
+  @include placeholder-color($text-color-2);
+  outline: none;
+  margin-bottom: 20px;
+  &:focus {
+    border: 1px solid #a6c8ff;
+  }
+}
+
+.search-box-input__icon {
+  position: absolute;
+  font-size: $fsmedium;
+  color: $text-color-2;
+  left: 91%;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.button__input{
+  width: 100%;
+}

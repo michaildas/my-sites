@@ -1,0 +1,38 @@
+@media (max-width: 1199px) {
+
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .nav__item:not(:first-child) {
+    padding-left: 20px;
+  }
+
+  .container {
+    width: 750px;
+  }
+  .header__top {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  html, body {
+    font-size: 10px;
+  }
+  .container {
+    padding: 0 15px;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header__info {
+    height: inherit;
+  }
+}
